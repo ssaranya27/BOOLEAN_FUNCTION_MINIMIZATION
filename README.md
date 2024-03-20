@@ -11,13 +11,11 @@ F2=xy’z+x’y’z+w’xy+wx’y+wxy
 **Equipment Required:**
 
 Hardware – PCs, Cyclone II , USB flasher
+Hardware – PCs, Cyclone II , USB flasher
 
 **Software – Quartus prime**
-
 **Theory**
-
 **Logic Diagram**
-
 **Procedure**
 
 1.	Type the program in Quartus software.
@@ -32,20 +30,31 @@ Hardware – PCs, Cyclone II , USB flasher
 
 
 **Program:**
+```
+module boolean_function(A,B,C,D,F1);
+input A,B,C,D;
+output F1;
+wire x1,x2,x3,x4,x5;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign F1=x1|x2|x3|x4|x5;
+endmodule
 
-/* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
-
-Developed by: RegisterNumber:*/
+Developed by : Saranya S.
+Register No:212223220101
+```
 
 
 **RTL realization**
-
-**Output:**
-
+![alt text](<Screenshot 2024-03-20 200412.png>)
+**Truth Table**
+![alt text](<Screenshot 2024-03-20 195233.png>)
 **RTL**
-
 **Timing Diagram**
-
+![alt text](<Screenshot 2024-03-20 200325.png>)
 **Result:**
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
