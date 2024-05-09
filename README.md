@@ -55,7 +55,10 @@ Register No:212223220101
 **RTL**
 **Timing Diagram**
 ![alt text](<Screenshot 2024-03-20 200325.png>)
+
+
 **Result:**
+
 
 Thus the given logic functions are implemented using and their operations are verified using Verilog programming.
 
